@@ -1,0 +1,85 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import status from '@assets/status.jpg';
+import logo from '@assets/logo.png';
+---
+
+<section
+  class="min-h-screen bg-cover bg-center bg-no-repeat relative"
+  style={{ backgroundImage: `url(${status.src})` }}
+>
+  <div class="absolute inset-0 bg-black/80"></div>
+
+  <div class="absolute bottom-8 left-8 z-10">
+    <img src={logo.src} alt="CFS Logo" class="h-16 w-auto opacity-80" />
+  </div>
+
+  <div class="relative z-10 min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-end">
+        <div class="max-w-2xl text-right">
+          <h2
+            class="text-4xl md:text-5xl font-bold text-white mb-12 tracking-tight"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            PONTO DE SITUAÇÃO
+          </h2>
+
+          <div
+            class="text-lg md:text-xl text-white leading-relaxed mb-12"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            <p class="mb-8">
+              NESTE MOMENTO, ESTOU A RECOLHER MANIFESTAÇÕES DE INTERESSE. SE
+              CONSIDERAS QUE ESTE CURSO PODE SER UMA MAIS VALIA PARA O TEU
+              FUTURO, DEIXA-ME O TEU E-MAIL NA CAIXA EM BAIXO PARA QUE POSSAS
+              ESTAR A PAR DOS PRAZOS.
+            </p>
+          </div>
+
+          <form class="mb-12">
+            <div class="flex flex-col gap-4">
+              <input
+                type="email"
+                placeholder="INSERE O TEU E-MAIL AQUI"
+                value="email"
+                class="bg-white/10 border-white/30 text-white placeholder:text-white/70 h-14 text-lg backdrop-blur-sm"
+                required
+              />
+              <button
+                type="submit"
+                class="h-14 text-lg font-bold tracking-wider"
+              >
+                SUBMETER
+              </button>
+            </div>
+          </form>
+
+          <div class="text-center">
+            <p
+              class="text-white text-lg mb-6 font-medium"
+              style={{ textShadow: 'var(--text-shadow)' }}
+            >
+              SEGUE-ME NAS REDES SOCIAIS
+            </p>
+            <div class="flex justify-center gap-6">
+              <Icon
+                name="mdi:linkedin"
+                class="h-12 w-12 opacity-80 hover:opacity-100 transition-opacity cursor-pointer text-white"
+              />
+              <Icon
+                name="mdi:facebook"
+                class="h-12 w-12 opacity-80 hover:opacity-100 transition-opacity cursor-pointer text-white"
+              />
+              <Icon
+                name="mdi:instagram"
+                class="h-12 w-12 opacity-80 hover:opacity-100 transition-opacity cursor-pointer text-white"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+---
+import profile from '@assets/profile.jpg';
+import logo from '@assets/logo.png';
+---
+
+<section
+  class="min-h-screen bg-cover bg-center bg-no-repeat relative"
+  style={{ backgroundImage: `url(${profile.src})` }}
+>
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/70"
+  >
+  </div>
+
+  <div class="absolute top-8 left-8 z-10">
+    <img src={logo.src} alt="CFS Logo" class="h-16 w-auto" />
+  </div>
+
+  <div class="relative z-10 min-h-screen flex items-end">
+    <div class="container ml-auto px-4 mb-20">
+      <div class="grid items-end">
+        <div class="text-right lg:text-right">
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            CARLOS FILIPE SÊCO
+          </h1>
+          <h2
+            class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            DESENHADOR
+          </h2>
+          <p
+            class="text-xl text-white/90 font-light tracking-wide"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            DOMINA OS VALORES BASE.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

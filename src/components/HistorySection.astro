@@ -1,0 +1,38 @@
+---
+import history from '@assets/history.jpg';
+---
+
+<section
+  class="min-h-screen bg-cover bg-center bg-no-repeat relative"
+  style={{ backgroundImage: `url(${history.src})` }}
+>
+  {/* Dark overlay */}
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  {/* Content */}
+  <div class="relative z-10 min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-end">
+        <div class="max-w-2xl text-right">
+          <h2
+            class="text-5xl md:text-6xl font-bold text-white mb-12 tracking-tight"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            HISTÓRICO
+          </h2>
+          <div
+            class="text-lg md:text-xl text-white leading-relaxed space-y-6 text-backdrop"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            <p>
+              SOU DESENHADOR HÁ 17 ANOS, O MEU DIA É AUTOCAD E DESENHO TÉCNICO.
+              TRABALHO EM TODAS AS ESPECIALIDADES DA CONSTRUÇÃO CIVIL, EMBORA
+              DEDIQUE A MAIOR PARTE DO MEU TEMPO AOS PROJECTOS DE ESTRUTURAS.
+              TENHO FORMAÇÃO PEDAGÓGICA INICIAL DE FORMADORES E E-LEARNING.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

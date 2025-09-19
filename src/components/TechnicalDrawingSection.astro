@@ -1,0 +1,59 @@
+---
+import content2 from '@assets/content2.jpg';
+
+const desenhoContent = [
+  'TIPOS DE LINHA E INTERPRETAÇÕES',
+  'PREENCHIMENTOS',
+  'PLANTAS',
+  'CORTES',
+  'ALÇADOS',
+  'PORMENORES',
+  'ESCALAS NORMALIZADAS',
+  'TAMANHOS DE FOLHAS "EU"',
+  'LEGENDAS',
+  'DOBRAGENS E ARQUIVAMENTO',
+];
+---
+
+<section
+  class="min-h-screen bg-cover bg-center bg-no-repeat relative"
+  style={{ backgroundImage: `url(${content2.src})` }}
+>
+  {/* Dark overlay */}
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  {/* Content */}
+  <div class="relative z-10 min-h-screen flex items-center">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-end">
+        <div class="max-w-2xl text-right">
+          <h2
+            class="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            CONTEÚDOS
+          </h2>
+          <h3
+            class="text-3xl md:text-4xl font-bold text-white mb-12 tracking-tight"
+            style={{ textShadow: 'var(--text-shadow)' }}
+          >
+            CURSO DESENHO TÉCNICO
+          </h3>
+          <div class="space-y-3">
+            {
+              desenhoContent.map((item, index) => (
+                <div
+                  key={index}
+                  class="text-lg md:text-xl text-white font-medium"
+                  style={{ textShadow: 'var(--text-shadow)' }}
+                >
+                  {item}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
